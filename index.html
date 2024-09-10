@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobremi">Sobre mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección principal -->
+    <section id="inicio">
+        <h1>Bienvenidos a mi página web</h1>
+        <p>Esta es mi pagina web</p>
+    </section>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="sobremi">
+        <h2>Sobre mí</h2>
+        <ul>
+            <li>Me gusta programar</li>
+            <li>Soy futbolista</li>
+            <li>Estudio en la UTD</li>
+        </ul>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Pie de pagina -->
+     <footer>
+        <p> &copy; 2024 Mi primera pagina web
+        </p>
+     </footer>
+
+
+</body>
+</html>

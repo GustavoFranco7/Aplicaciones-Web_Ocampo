@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML y JavaScript Diagnóstico</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="Estilos/Styles.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1>Welcome to the Quiz</h1>
+        <p id="question">What is the capital of France?</p>
+        <button class="button" onclick="checkAnswer()">Submit Answer</button>
+    </div>
+
+    <script>
+        /**
+         * Pregunta: ¿Cuál es la función de 'document.getElementById' en JavaScript?
+         * Respuesta: 'document.getElementById' se utiliza para seleccionar y obtener un elemento del DOM mediante su atributo 'id'.
+         */
+        function checkAnswer() {
+            /**
+             * Pregunta: ¿Qué hace 'prompt' y cómo se puede usar en lugar de 'alert'?
+             * Respuesta: 'prompt' muestra un cuadro de diálogo que solicita al usuario que ingrese información (como texto). 
+             * Se puede usar para recibir datos del usuario, a diferencia de 'alert' que solo muestra un mensaje.
+             */
+            let answer = prompt("Enter your answer:");
+
+            /**
+             * Pregunta: ¿Cuál es el propósito de la instrucción 'if' en este fragmento de código?
+             * Respuesta: La instrucción 'if' verifica si la respuesta ingresada por el usuario es igual a 'paris' (sin importar el caso). 
+             * Si es así, muestra 'Correct!', de lo contrario, muestra 'Try again!'.
+             */
+            if (answer && answer.trim().toLowerCase() === 'paris') {
+                alert("Correct!");
+            } else {
+                alert("Try again!");
+            }
+        }
+
+        /**
+         * Pregunta: ¿Cómo se puede manipular el DOM usando JavaScript para cambiar el contenido de un elemento?
+         * Respuesta: Se utiliza 'document.getElementById' para seleccionar el elemento por su 'id', y luego se usa '.innerText' para cambiar el contenido del elemento.
+         */
+        document.getElementById("question").innerText = "What is the capital of Spain?";
+    </script>
+
+</body>
+</html>
