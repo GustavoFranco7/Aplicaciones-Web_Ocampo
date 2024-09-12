@@ -8,28 +8,69 @@
 </head>
 <body>
     <!-- Barra de navegación -->
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobremi">Sobre mí</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <div class="Encabezado">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobremi">Quienes somos</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="slider">
+            <img src="assets/images/apple.jpg" alt="imagen 1">
+            <img src="assets/images/apple1.jpg" alt="imagen 2">
+            <img src="assets/images/iphones.jpg" alt="imagen 3">
+            <img src="assets/images/iphones2.jpg" alt="imagen 4">
+        </div>
+    </div>
 
     <!-- Sección principal -->
     <section id="inicio">
         <h1>Bienvenidos a mi página web</h1>
-        <p>Esta es mi pagina web</p>
+        <p>Esta es mi página web</p>
     </section>
 
     <!-- Sección "Sobre mí" -->
     <section id="sobremi">
-        <h2>Sobre mí</h2>
+        <h2>Quienes somos</h2>
         <ul>
-            <li>Me gusta programar</li>
-            <li>Soy futbolista</li>
-            <li>Estudio en la UTD</li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
+    </section>
+
+    <!-- Catálogo de productos -->
+    <section id="productos">
+        <h2>Productos</h2>
+        
+        <div class="contenedor-productos">
+            <div class="producto">
+                <h3>iPhone 16</h3>
+                <img src="https://fotografias.larazon.es/clipping/cmsimages02/2024/09/09/3868AF8B-1D1C-441C-869F-1D43E10D291F/iphone-16-nuevo-color_98.jpg?crop=791,445,x0,y5&width=1900&height=1069&optimize=low&format=webply" 
+                    alt="iPhone 16" width="200px">
+                <p>Descripción del iPhone 16.</p>
+                <button>Comprar</button>
+            </div>
+            
+            <div class="producto">
+                <h3>Apple Watch Series 10</h3>
+                <img src="https://www.apple.com/v/apple-watch-series-10/a/images/overview/welcome/welcome_hero_endframe__xoqjrm8575ey_xlarge.jpg" 
+                    alt="Apple Watch Series 10" width="300px">
+                <p>Descripción del Apple Watch Series 10.</p>
+                <button>Comprar</button>
+            </div>
+            
+            <div class="producto">
+                <h3>AirPods Pro 4</h3>
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MTJV3?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1694014871985" 
+                    alt="AirPods Pro 4" width="160px">
+                <p>Descripción de los AirPods Pro 4.</p>
+                <button>Comprar</button>
+            </div>
+        </div>
     </section>
 
     <!-- Formulario de contacto -->
@@ -49,12 +90,11 @@
         </form>
     </section>
 
-    <!-- Pie de pagina -->
-     <footer>
-        <p> &copy; 2024 Mi primera pagina web
-        </p>
-     </footer>
-
-
-</body>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mi primera página web</p>
+    </footer>
+    
+    <script src="slider.js"></script>
+</body> 
 </html>
